@@ -1,0 +1,85 @@
+{
+    "data": [{
+             "type": "carePlan",
+             "variant": "US",
+             "id": "16b2bb16-1001-4d2c-92b9-eb430c90e03e",
+             "status": "active",
+             "created": "2015-09-10T22:48:49Z",
+             "expires": "2015-09-10T22:48:49Z",
+             "details": {
+             "date": "2015-09-10T18:48:49-0400",
+             "expiration": "2015-09-10T18:48:49-0400",
+             "dailyDoseTime": 79200,
+             "dailyReadingTime": 21600,
+             "titrationType": "basal",
+             "titrationDays": 3,
+             "titrationPairs": 3,
+             "bglCalculation": "mean",
+             "startingDose": 15,
+             "otherInstructions": "During titration limit alcohol use to 1-2 drinks per day.  Also, try to increase steps within the first few weeks to 5000 per day.  Contact your diabetes educator for guidance on diabetes educational services.",
+             "hcpPhone": "+16175551212",
+             "medication": {
+                 "fullName": "Toujeo® (insulin glargine injection) 300 Units/mL",
+                 "class": "medication",
+                 "id": "0024-5869_d3fbaa04-d53c-4833-96b5-7688d4efbfb3",
+                 "ndc": "0024-5869",
+                 "brandName": "Toujeo®",
+                 "genericName": "(insulin glargine injection) 300 Units/mL",
+                 "manufacturer": "Sanofi-Aventis U.S. LLC",
+                 "productInfo": "http://products.sanofi.us/toujeo/toujeo.html"
+             },
+             "hypoBGThreshold": 70,
+             "maximumDose": 15,
+             "doseUOM" : "units",
+             "bgUOM" : "mg/dL",
+             "adherenceModel" : "strict",
+             "bglRanges": [{
+                           "minBGValue": 0,
+                           "doseChange": -30,
+                           "changeMethod": "percent"
+                           }, {
+                           "minBGValue": 60,
+                           "doseChange": -10,
+                           "changeMethod": "percent"
+                           }, {
+                           "minBGValue": 80,
+                           "doseChange": 0,
+                           "changeMethod": "percent"
+                           }, {
+                           "minBGValue": 110,
+                           "doseChange": 20,
+                           "changeMethod": "percent"
+                           }, {
+                           "minBGValue": 160,
+                           "doseChange": 30,
+                           "changeMethod": "percent"
+                           }],
+             "hypoOptions": "call_provider_and_continue"
+             }
+             }],
+    "included": [{
+                 "class": "patient",
+                 "id": "d04704c6-ad72-4cb6-a7c0-5aad142f44fd",
+                 "pin" : "3340-8618-8337",
+                 "firstName": "John",
+                 "lastName": "Smith",
+                 "gender": "male",
+                 "phone": "6175551212",
+                 "email": "John.Smith@sanofi.com",
+                 "deviceToken": "53494d554c41544f521952f5f70700b0e07342537f7f00000000000000000000",
+                 "dob": "1970-03-16",
+                 "mrn": "111222333444",
+                 "active": true
+                 }, {
+                 "type": "token",
+                 "id": "2ab02161-3451-4aa4-95bb-f0fe3464e4fa",
+                 "email": "John.Smith@@sanofi.com",
+                 "created": "2015-05-29T23:59:18+0000",
+                 "expires": "2015-05-30T23:59:18+0000",
+                 "tokenType": "carePlan",
+                 "action": "https://www.medtech-cloud.com/api/1.0/patient/889008ab-4bc9-490e-8a83-c721710cb4b3/careplan/7eb870c1-5a55-4919-aa63-2393b4a1fbcc",
+                 "params": "{\"status\":\"active\"}",
+                 "method": "PUT",
+                 "status": "active"
+                 }]
+}

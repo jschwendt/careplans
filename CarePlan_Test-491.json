@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "secret": "TEST",
+    "user": "TEST"
+  },
+  "data":[
+    {
+      "class":"carePlan",
+      "id":"ba05ca58-520f-4669-ac0b-b748a9970c5d",
+      "status":"pending",
+      "isCompliant":false,
+      "hasNotified":false,
+      "effective":"2020-03-12T16:13:35+0000",
+      "expires":"2020-04-09T16:26:28+0000",
+      "sourceId":"4e3f0841-8360-40b8-80cd-68ab07b5bd42",
+      "sourceType":"template",
+      "variant":"main-in",
+      "module":"titration",
+      "createdBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+      "created":"2020-03-12T16:26:29+0000",
+      "modifiedBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+      "lastModified":"2020-03-12T16:26:29Z",
+      "prescriptions":[
+        {
+          "class":"prescription",
+          "id":"ee4cba62-283e-4706-a715-f87b0491f8cc",
+          "category":"insulin",
+          "subCategory":"basal",
+          "uom":"unit",
+          "schedule":[
+            {
+              "class":"schedule",
+              "id":"17871a76-e011-43b2-bfa9-e4905f60a819",
+              "type":"regular",
+              "daysPerWeek":7,
+              "dailyEvent":"bedtime",
+              "dose":20.0,
+              "offset":0
+            }
+          ],
+          "medication":{
+            "class":"medication",
+            "id":"fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f",
+            "externalId":"11",
+            "selectName":"Lantus",
+            "displayName":"Lantus®",
+            "activeIngredient":"glargine u100",
+            "type":"basal or premix",
+            "deliveryMethod":"injectable",
+            "frequency":"daily",
+            "strength":"U100",
+            "status":"active",
+            "modules":[
+              "titration",
+              "persistence"
+            ],
+            "variant":"main-in",
+            "createdBy":"system",
+            "createdDate":"2020-01-07T16:42:07Z",
+            "modifiedBy":"system",
+            "modifiedDate":"2020-01-07T16:42:07Z",
+            "devices":[],
+            "fullName":"Lantus® (U100)"
+          },
+          "customAttributes":{
+            "titration":{
+              "titrationCycleLength":"P3D",
+              "minAdherencePairs":3,
+              "bloodGlucoseAverageMethod":"median",
+              "adjustmentRanges":[
+                {
+                  "lowerBound":150,
+                  "lowerBoundComparisonOperator":">=",
+                  "boundComparison":"absolute",
+                  "boundUom":"mg/dL",
+                  "doseChangeUom":"unit",
+                  "doseChangeValue":2
+                },
+                {
+                  "lowerBound":99,
+                  "lowerBoundComparisonOperator":">=",
+                  "upperBound":150,
+                  "upperBoundComparisonOperator":"<",
+                  "boundComparison":"absolute",
+                  "boundUom":"mg/dL",
+                  "doseChangeUom":"unit",
+                  "doseChangeValue":0
+                },
+                {
+                  "lowerBound":89,
+                  "lowerBoundComparisonOperator":">=",
+                  "upperBound":99,
+                  "upperBoundComparisonOperator":"<",
+                  "boundComparison":"absolute",
+                  "boundUom":"mg/dL",
+                  "doseChangeUom":"unit",
+                  "doseChangeValue":-2
+                },
+                {
+                  "lowerBound":0,
+                  "lowerBoundComparisonOperator":">=",
+                  "upperBound":89,
+                  "upperBoundComparisonOperator":"<",
+                  "boundComparison":"absolute",
+                  "boundUom":"mg/dL",
+                  "doseChangeUom":"unit",
+                  "doseChangeValue":-4
+                }
+              ],
+              "maxDose":200
+            }
+          },
+          "createdBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+          "createdDate":"2020-03-12T16:26:29Z",
+          "modifiedBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+          "modifiedDate":"2020-03-12T16:26:29Z"
+        },
+        {
+          "class":"prescription",
+          "id":"c4e5ab24-8d4a-4d9c-85c0-210db035f719",
+          "category":"blood_glucose",
+          "uom":"mg/dL",
+          "schedule":[
+            {
+              "class":"schedule",
+              "id":"69e97e44-7999-4b61-ade9-3abd009c1347",
+              "type":"fasting",
+              "daysPerWeek":7,
+              "dailyEvent":"wake_up",
+              "dose":0.0,
+              "offset":0
+            }
+          ],
+          "rules":[
+            {
+              "class": "rule",
+              "id": "22158975-cfa1-417a-ada3-30e966c79cf9",
+              "type": "hypo",
+              "action": "notify_care_team_and_continue_plan",
+              "lowerBound": 0,
+              "lowerBoundComparisonOperator": ">=",
+              "upperBound": 60,
+              "upperBoundComparisonOperator": "<=",
+              "uom": "mg/dl"
+
+            }
+          ],
+          "customAttributes":{
+            "bgRanges":{
+              "targetLowerLimit":70,
+              "targetUpperLimit":119
+            }
+          },
+          "createdBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+          "createdDate":"2020-03-12T16:26:29Z",
+          "modifiedBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+          "modifiedDate":"2020-03-12T16:26:29Z"
+        }
+      ],
+      "compliant":false,
+      "expand":{
+        "createdBy":{
+          "firstName":"C",
+          "lastName":"M",
+          "id":"577d0ed4-e541-460f-ad69-1882639e0196",
+          "category":"CLINIC",
+          "username":"cesar.marchal"
+        }
+      },
+      "hcpPhone":"+1 516-111-2222",
+      "hcpAdditionalInstructions":"During titration limit alcohol use to 1-2 drinks per day.  Also, try to increase steps within the first few weeks to 5000 per day.  Contact your diabetes educator for guidance on diabetes educational services."
+    }
+  ],
+  "included":[
+    {
+      "yob":2020,
+      "test":true,
+      "class":"patient",
+      "id":"277aa72e-e782-4456-977f-2db09cb7ebfd",
+      "pin":"0007-0046-0000",
+      "gender":"male",
+      "mrn":"1111111",
+      "status":"active",
+      "active":true,
+      "created":"2020-03-12T15:24:06Z",
+      "createdBy":"577d0ed4-e541-460f-ad69-1882639e0196",
+      "modified":"2020-03-12T15:24:06Z",
+      "modifiedBy":"577d0ed4-e541-460f-ad69-1882639e0196"
+    }
+  ]
+}
