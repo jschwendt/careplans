@@ -1,0 +1,37 @@
+Create Careplan,1970-03-16 14:10,CarePlan1.json,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:30,CollectData,
+Add BG,1970-03-16 23:30,160,fasting
+Add BG,1970-03-17 14:10,160,fasting
+Add BG,1970-03-18 14:10,160,fasting
+Calculate Adherent Dose Suggestion,1970-03-18 22:10,19,
+Confirm,1970-03-18 22:11,,
+Add BG,1970-03-19 14:30,160,fasting
+Add BG,1970-03-20 14:10,160,fasting
+Add BG,1970-03-21 14:10,160,fasting
+Calculate Adherent Dose Suggestion,1970-03-21 22:10,24,
+Confirm,1970-03-21 14:20,,
+Create Careplan,1970-03-22 14:10,CarePlan2.json,
+Activate Careplan,1970-03-22 14:20,,
+Run,1970-03-22 22:20,CollectData,
+Add BG,1970-03-23 14:30,160,fasting
+Add BG,1970-03-24 14:10,160,fasting
+Add BG,1970-03-25 14:10,160,fasting
+Calculate Adherent Dose Suggestion,1970-03-25 22:10,23,
+Confirm,1970-03-25 22:20,,
+Add BG,1970-03-26 14:30,60,fasting
+Add BG,1970-03-27 14:10,61,fasting
+Add BG,1970-03-28 14:10,62,fasting
+Add BG,1970-03-29 14:10,63,fasting
+Calculate Adherent Dose Suggestion,1970-03-29 22:10,22,
+Confirm,1970-03-29 22:20,,
+Add BG,1970-04-01 14:30,60,fasting
+Add BG,1970-04-02 14:10,62,fasting
+Add BG,1970-04-03 14:10,61,fasting
+Add BG,1970-04-04 14:10,63,fasting
+Calculate Adherent Dose Suggestion,1970-04-04 22:10,21,
+Confirm,1970-04-04 22:20,,
+Add BG,1970-04-05 14:30,80,fasting
+Add BG,1970-04-06 14:10,81,fasting
+Add BG,1970-04-07 14:10,82,fasting
+Calculate Adherent Dose Suggestion,1970-04-07 22:10,21,

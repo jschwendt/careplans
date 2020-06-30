@@ -1,0 +1,29 @@
+Create Careplan,1970-03-16 14:10,CarePlan_TEST-194.json,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Comment,,Step 4
+Add Dose,1970-03-16 22:01,44,
+Comment,,Step 5
+Add BG,1970-03-17 06:00,111,fasting
+Comment,,Step 6
+Add Dose,1970-03-17 22:00,44,
+Comment,,Step 7 and 8
+Add Dose,1970-03-18 22:00,44,
+Comment,,Step 9
+Add BG,1970-03-19 06:00,131,fasting
+Comment,,Step 10
+Add Dose,1970-03-19 22:00,44,
+Comment,,Step 11
+Add BG,1970-03-20 06:00,141,fasting
+Comment,,Step 12
+Add Dose,1970-03-20 22:00,44,
+Comment,,Step 13
+Add BG,1970-03-21 06:00,151,fasting
+Comment,,Step 14
+Run,1970-03-21 22:00,CollectData
+Add Dose,1970-03-21 22:00,44,
+Comment,,Step 15
+Add BG,1970-03-22 06:00,161,fasting
+Comment,,Step 16
+Run,1970-03-22 22:00,CollectData,
+Verify,1970-03-22 22:00,44,

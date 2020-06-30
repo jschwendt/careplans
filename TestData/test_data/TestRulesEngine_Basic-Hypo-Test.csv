@@ -1,0 +1,16 @@
+Create Careplan,1970-03-16 14:10,CarePlan_AMH-BasicHypoTest.json,
+Activate Careplan,1970-03-16 14:11,,
+Run,1970-03-17 11:00,CollectData,
+Verify,1970-03-17 11:01,50,
+Add BG,1970-03-17 11:02,200,fasting
+Add Dose,1970-03-17 11:03,50,
+Add BG,1970-03-18 11:00,250,fasting
+Run,1970-03-18 11:01,ConfirmCurrentDose,
+Verify,1970-03-18 11:02,52,
+Add Dose,1970-03-18 11:04,52,
+Add BG,1970-03-18 19:00,20,nonfasting
+Run,1970-03-19 11:00,ConfirmCurrentDose,
+Comment,Do not confirm, but add a new high value
+Add BG,1970-03-19 11:01,500,fasting
+Run,1970-03-19 11:02,ConfirmCurrentDose,
+Verify,1970-03-19 11:03,50,

@@ -1,0 +1,49 @@
+Create XY Careplan,1970-03-16 1:10,CarePlanXofY_AM_Dose.json,3,3,
+Activate Careplan,1970-03-16 1:20,,
+Run,1970-03-16 2:00,CollectData,
+Comment,,Add 3 days of adherent doses and high FBGs to result in a dose increase
+Check Dose Validity,1970-03-16 2:30,15,safe
+Check Dose Validity,1970-03-16 2:30,16,safe
+Check Dose Validity,1970-03-16 2:30,90,unsafe
+Check Dose Validity,1970-03-16 2:30,2,unsafe
+Add Dose,1970-03-16 2:30,15
+Add BG,1970-03-16 22:10,160,fasting
+Add Dose,1970-03-17 2:30,15
+Add BG,1970-03-17 22:10,160,fasting
+Add Dose,1970-03-18 2:30,15
+Add BG,1970-03-18 22:30,160,fasting
+Run,1970-03-18 23:30,ConfirmCurrentDose
+Verify,1970-03-18 23:30,19
+Comment,,Add 3 days of adherent doses and Low FBGs to result in a dose increase
+Add Dose,1970-03-19 2:30,19
+Add BG,1970-03-19 22:10,71,fasting
+Add Dose,1970-03-20 2:30,19
+Add BG,1970-03-20 22:10,71,fasting
+Add Dose,1970-03-21 2:30,19
+Add BG,1970-03-21 22:30,71,fasting
+Run,1970-03-22 2:30,ConfirmCurrentDose
+Verify,1970-03-22 2:30,17
+Add Dose,1970-03-22 2:31,17
+Comment,,Add a hypo event and result in a reduction
+Add BG,1970-03-23 2:10,54,nonfasting
+Run,1970-03-23 2:30,ConfirmCurrentDose
+Verify,1970-03-23 2:30,11
+Comment,,Add values leading up to an increase. Continually check to ensure interval is ended at correct time
+Add Dose,1970-03-23 2:31,11
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-03-23 22:29,CollectData
+Add BG,1970-03-23 22:30,160,fasting
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-03-24 2:29,CollectData
+Add Dose,1970-03-24 2:30,11
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-03-24 22:09,CollectData
+Add BG,1970-03-24 22:10,160,fasting
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-03-25 2:29,CollectData
+Add Dose,1970-03-25 2:30,11
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-03-25 22:09,CollectData
+Add BG,1970-03-25 22:10,160,fasting
+Run,1970-03-26 2:30,ConfirmCurrentDose
+Verify,1970-03-26 2:30,14

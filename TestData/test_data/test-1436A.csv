@@ -1,0 +1,20 @@
+Comment,,TESTSTEP 1,
+Comment,,First Titration verifies TF-510,
+Create Careplan,1970-04-01 06:00,CarePlan_AMH-1436.json,
+Activate Careplan,1970-04-01 14:20,,
+Run,1970-04-01 22:00,CollectData,
+Comment,,TESTSTEP 2,
+Add Dose,1970-04-01 22:30,30
+Comment,,TESTSTEP 3,
+Add BG,1970-04-02 06:00,130,fasting
+Comment,,TESTSTEP 4,
+Add Dose,1970-04-02 22:30,30
+Comment,,TESTSTEP 5,
+Add BG,1970-04-03 06:00,140,fasting
+Comment,,TESTSTEP 6,
+Add Dose,1970-04-03 22:30,30
+Comment,,TESTSTEP 7,
+Add BG,1970-04-04 06:00,160,fasting
+Run,1970-04-04 22:30,ConfirmCurrentDose
+Verify,1970-04-04 22:30,32
+Comment,,dose should be 32

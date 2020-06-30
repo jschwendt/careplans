@@ -1,0 +1,42 @@
+Create XY Careplan,1970-03-16 14:10,CarePlanXofY.json,1,7,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Comment,,Add 1 day of adherent doses and high FBGs over 7 days to result in a dose increase
+Add BG,1970-03-16 14:30,160,fasting
+Check Dose Validity,1970-03-16 22:30,15,safe
+Check Dose Validity,1970-03-16 22:30,16,safe
+Check Dose Validity,1970-03-16 22:30,90,unsafe
+Check Dose Validity,1970-03-16 22:30,2,unsafe
+Add Dose,1970-03-16 22:30,15
+Add BG,1970-03-17 14:10,160,fasting
+Run,1970-03-23 22:30,ConfirmCurrentDose
+Verify,1970-03-23 22:30,19
+Comment,,Add 1 days of adherent doses and Low FBGs over 7 days to result in a dose decrease
+Add Dose,1970-03-23 22:30,19
+Add BG,1970-03-24 14:10,71,fasting
+Run,1970-03-30 22:30,ConfirmCurrentDose
+Verify,1970-03-30 22:30,17
+Add Dose,1970-03-30 22:31,17
+Comment,,Add a hypo event and result in a reduction
+Add BG,1970-03-31 14:10,54,nonfasting
+Run,1970-03-31 22:30,ConfirmCurrentDose
+Verify,1970-03-31 22:30,11
+Comment,,Add values leading up to an increase. Continually check to ensure interval is ended at correct time
+Add Dose,1970-03-31 22:31,11
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-01 14:29,CollectData
+Add BG,1970-04-01 14:30,160,fasting
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-01 22:29,CollectData
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-02 22:29,CollectData
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-03 22:29,CollectData
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-04 22:29,CollectData
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-05 22:29,CollectData
+Comment,,About to run titration engine; should not generate dose suggestion
+Run,1970-04-06 22:29,CollectData
+Run,1970-04-07 22:30,ConfirmCurrentDose
+Verify,1970-04-07 22:30,14

@@ -1,0 +1,15 @@
+Create Careplan,1970-07-01 23:37,CarePlan_AMH-1875.json,
+Activate Careplan,1970-07-01 23:38,,
+Run,1970-07-01 23:39,CollectData,
+Add Dose,1970-07-01 23:40,10,
+Comment,Advance Several Weeks
+Run,1970-08-01 7:39,CollectData,
+Verify,1970-08-01 7:39,10,
+Add BG,1970-08-01 7:40,222,fasting
+Comment,Advance 2 Days
+Run,1970-08-03 7:39,CollectData,
+Verify,1970-08-03 7:39,10,
+Add BG,1970-08-03 7:40,222,fasting
+Comment,Advance to that evening
+Run,1970-08-03 22:40,CollectData,
+Verify,1970-08-03 22:41,10,

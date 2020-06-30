@@ -1,0 +1,27 @@
+Create XY Careplan,1970-03-16 14:10,CarePlan_Test_1002.json,4,4,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Comment,,Add 3 days of adherent pairs then send a new care plan
+Add Dose,1970-03-16 22:30,20
+Add BG,1970-03-17 14:10,100,fasting
+Add Dose,1970-03-17 22:30,20
+Add BG,1970-03-18 14:10,110,fasting
+Run,1970-03-18 22:30,CollectData
+Verify,1970-03-18 22:30,20
+Create XY Careplan,1970-03-18 22:31,CarePlan_Test_1002_30.json,4,4,
+Break,,
+Activate Careplan,1970-03-18 22:31,,
+Run,1970-03-18 22:32,CollectData,
+Verify,1970-03-18 22:32,30
+Add Dose,1970-03-18 22:32,30
+Comment,,Enter 2 days of data, then activate a new care plan outside of the UDT window
+Add BG,1970-03-19 14:10,120,fasting
+Add Dose,1970-03-19 22:30,30
+Add BG,1970-03-20 14:10,130,fasting
+Create XY Careplan,1970-03-20 14:11,CarePlan_Test_1002_40.json,4,4,
+Activate Careplan,1970-03-20 14:11,,
+Run,1970-03-20 22:30,CollectData
+Verify,1970-03-20 22:30,40
+Add Dose,1970-03-20 22:31,40
+Run,1970-03-20 22:32,CollectData
+Verify,1970-03-20 22:32,40

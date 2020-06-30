@@ -1,0 +1,47 @@
+Comment,,TESTSTEP 2,
+Create Careplan,1970-04-01 04:00,CarePlan_Test-1223.json,,,
+Comment,,TESTSTEP 3,
+Activate Careplan,1970-04-01 04:00,
+Run,1970-04-01 05:00,CollectData,
+Comment,,TESTSTEP 4,
+Add Dose,1970-04-01 05:00,2
+Comment,,TESTSTEP 5,
+Add BG,1970-04-01 17:00,77,fasting
+Comment,,TESTSTEP 6,
+Run,1970-04-02 05:00,ConfirmCurrentDose
+Verify,1970-04-02 05:00,0
+Comment,,TESTSTEP 7,
+Add Dose,1970-04-02 05:00,0
+Comment,,TESTSTEP 8,
+Add BG,1970-04-02 17:00,167,fasting
+Comment,,TESTSTEP 9,
+Run,1970-04-03 05:00,ConfirmCurrentDose
+Verify,1970-04-03 05:00,1
+Comment,,TESTSTEP 10,
+Add Dose,1970-04-03 05:00,1
+Comment,,TESTSTEP 11,
+Add BG,1970-04-03 17:00,80,fasting
+Comment,,TESTSTEP 12,
+Run,1970-04-04 05:00,ConfirmCurrentDose
+Verify,1970-04-04 05:00,0
+Comment,,TESTSTEP 13,
+Add Dose,1970-04-04 05:00,0
+Comment,,TESTSTEP 14,
+Add BG,1970-04-04 17:00,210,fasting
+Comment,,TESTSTEP 15,
+Run,1970-04-05 05:00,ConfirmCurrentDose
+Verify,1970-04-05 05:00,1
+Comment,,TESTSTEP 16,
+Add Dose,1970-04-06 05:00,1
+Comment,,TESTSTEP 17,
+Add BG,1970-04-06 17:00,33,fasting
+Comment,,TESTSTEP 19,
+Run,1970-04-07 05:00,ConfirmCurrentDose
+Verify,1970-04-07 05:00,0
+Comment,,TESTSTEP 20,
+Add Dose,1970-04-07 05:00,0
+Comment,,TESTSTEP 21,
+Add BG,1970-04-07 17:00,127,fasting
+Comment,,TESTSTEP 22,
+Run,1970-04-08 05:00,ConfirmCurrentDose
+Verify,1970-04-08 05:00,2

@@ -1,0 +1,14 @@
+Comment,,This case will execute the scenario where there are two FBGs after a dose which can occur if the FBG is entered after the dose but before the end of the day
+Create Careplan,1970-03-16 14:10,CarePlan1.json,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Add Dose,1970-03-16 22:00,15
+Add BG,1970-03-16 23:00,161,fasting
+Add BG,1970-03-17 02:00,120,fasting
+Add Dose,1970-03-17 22:00,15
+Add BG,1970-03-18 08:00,161,fasting
+Add Dose,1970-03-18 22:00,15
+Add BG,1970-03-19 08:00,161,fasting
+Run,1970-03-19 22:00,ConfirmCurrentDose
+Comment,,The below verification will fail if the calculation does not consider the lower of the two fbgs entered after the first dose.
+Verify,1970-03-19 22:30,18

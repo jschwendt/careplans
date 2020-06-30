@@ -1,0 +1,22 @@
+Comment,,TESTSTEP 1,
+Comment,,TEST-1438,
+Create Careplan,1970-04-01 06:00,CarePlan_AMH-1438.json,,,
+Activate Careplan,1970-04-01 14:20,,
+Run,1970-04-01 22:00,CollectData,
+Comment,,TESTSTEP 2,
+Add Dose,1970-04-01 22:30,20
+Comment,,TESTSTEP 3,
+Add BG,1970-04-02 06:00,90,fasting
+Comment,,TESTSTEP 4,
+Add Dose,1970-04-02 22:30,20
+Comment,,TESTSTEP 5,
+Add BG,1970-04-03 06:00,90,fasting
+Comment,,TESTSTEP 6,
+Add Dose,1970-04-03 22:30,20
+Comment,,TESTSTEP 7,
+Add BG,1970-04-04 06:00,90,fasting
+Comment,,TESTSTEP 8,
+Add BG,1970-04-04 10:00,65,nonfasting
+Comment,,TESTSTEP 9,
+Run,1970-04-04 22:30,ConfirmCurrentDose
+Verify,1970-04-08 22:30,13

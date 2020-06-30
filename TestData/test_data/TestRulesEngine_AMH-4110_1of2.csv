@@ -1,0 +1,20 @@
+Create XY Careplan,1970-04-01 14:10,CarePlanXofY_AMH-4110.json,2,7,
+Activate Careplan,1970-04-01 14:20,,
+Run,1970-04-01 22:00,CollectData,
+Comment,,Add 3 days of adherent doses and varying FBG days to result in a +2 dose increase
+Add Dose,1970-04-01 22:30,30
+Add BG,1970-04-02 06:10,100,fasting
+Check Dose Validity,1970-04-02 22:30,30,safe
+Check Dose Validity,1970-04-02 22:30,31,safe
+Check Dose Validity,1970-04-02 22:30,90,unsafe
+Check Dose Validity,1970-04-02 22:30,2,unsafe
+Add Dose,1970-04-02 22:15,30
+Add BG,1970-04-03 06:05,110,fasting
+Add Dose,1970-04-03 22:10,30
+Add BG,1970-04-04 06:00,120,fasting
+Run,1970-04-04 22:30,CollectData
+Run,1970-04-05 22:30,CollectData
+Run,1970-04-06 22:30,CollectData
+Run,1970-04-07 22:30,CollectData
+Run,1970-04-08 22:30,ConfirmCurrentDose
+Verify,1970-04-08 22:30,32

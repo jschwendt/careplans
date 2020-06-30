@@ -1,0 +1,6 @@
+Create Careplan,1970-03-16 14:10,CarePlan1.json,
+Activate Careplan,1970-03-16 14:20,,
+Add BG,1970-03-16 14:26,20,fasting
+Run,1970-03-23 22:00,ConfirmCurrentDose,
+Verify,1970-03-23 22:03,10,
+Run,1970-03-23 22:05,ConfirmCurrentDose,

@@ -1,0 +1,157 @@
+{
+    "meta": {
+        "secret": "TEST",
+        "user": "TEST"
+    },
+    "data": [{
+        "class": "carePlan",
+        "id": "7fba73cc-20da-47ab-a5c2-64a70f3ecf78",
+        "status": "pending",
+        "isCompliant": false,
+        "hasNotified": false,
+        "effective": "2019-08-08T15:12:00+0000",
+        "expires": "2029-08-08T15:12:00+0000",
+        "sourceId": "custom",
+        "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "created": "2019-08-08T15:13:41+0000",
+        "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "lastModified": "2019-08-08T15:13:41Z",
+        "hcpPhone":"+19785053266",
+        "hcpAdditionalInstructions": "Remember to exercise daily.",
+        "prescriptions": [{
+            "class": "prescription",
+            "id": "f2ee1f49-ff7b-401e-bbb8-f913bf5dd8b4",
+            "category": "blood_glucose",
+            "uom": "mg/dL",
+            "schedule": [{
+                "class": "schedule",
+                "id": "7323606a-9149-4fb4-94a6-6ac60c4a5b1e",
+                "daysPerWeek": 7,
+                "dailyEvent": "wake_up",
+                "dose": 0.0,
+                "offset": 1800,
+                "type": "fasting"
+            }],
+            "rules": [{
+                "class": "rule",
+                "id": "2cf6ae6c-b539-4b7e-9adb-a8e01a335e52",
+                "type": "hypo",
+                "action": "notify_care_team_and_continue_plan",
+                "lowerBound": 0,
+                "lowerBoundComparisonOperator": ">=",
+                "upperBound": 54,
+                "upperBoundComparisonOperator": "<",
+                "uom": "mg/dl"
+            }],
+            "customAttributes": {
+                "bgRanges": {
+                    "targetLowerLimit": 100,
+                    "targetUpperLimit": 180
+                }
+            },
+            "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+            "createdDate": "2019-08-08T15:13:41Z",
+            "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+            "modifiedDate": "2019-08-08T15:13:41Z"
+        }, {
+            "class": "prescription",
+            "id": "bbfdabc6-dde9-40fe-8207-99ed61189bd2",
+            "category": "insulin",
+            "subCategory": "basal",
+            "uom": "unit",
+            "schedule": [{
+                "class": "schedule",
+                "id": "7fa22c1d-c6e4-4d08-9c8c-b0cd1566780c",
+                "type": "regular",
+                "daysPerWeek": 7,
+                "dailyEvent": "bedtime",
+                "dose": 24.0,
+                "offset": -1800
+            }],
+            "medication": {
+                "class": "medication",
+                "id": "4136e587-4adc-4b12-ae2f-e2b2e7443e3a",
+                "selectName": "Toujeo Solostar",
+                "deliveryMethod": "injectable",
+                "frequency": "daily",
+                "strength": "U300",
+                "displayName": "Toujeo® SoloStar®",
+                "type": "basal or premix",
+                "activeIngredient": "glargine u300",
+                "status": "active",
+                "variant": "usestudy-in",
+                "externalId": "12",
+                "fullName": " "
+            },
+            "customAttributes": {
+                "titration": {
+                    "titrationCycleLength": "P7D",
+                    "bloodGlucoseAverageMethod": "median",
+                    "adjustmentRanges": [
+                        {
+                            "lowerBound": 180,
+                            "lowerBoundComparisonOperator": ">=",
+                            "boundComparison": "absolute",
+                            "boundUom": "mg/dL",
+                            "doseChangeUom": "unit",
+                            "doseChangeValue": 1
+                        }, {
+                            "lowerBound": 100,
+                            "lowerBoundComparisonOperator": ">=",
+                            "upperBound": 180,
+                            "upperBoundComparisonOperator": "<",
+                            "boundComparison": "absolute",
+                            "boundUom": "mg/dL",
+                            "doseChangeUom": "unit",
+                            "doseChangeValue": 0
+                        }, {
+                            "lowerBound": 0,
+                            "lowerBoundComparisonOperator": ">=",
+                            "upperBound": 100,
+                            "upperBoundComparisonOperator": "<",
+                            "boundComparison": "absolute",
+                            "boundUom": "mg/dL",
+                            "doseChangeUom": "unit",
+                            "doseChangeValue": -2
+                        }],
+                    "maxDose": 50,
+                    "minAdherencePairs": 3
+                }
+            },
+            "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+            "createdDate": "2019-08-08T15:13:41Z",
+            "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+            "modifiedDate": "2019-08-08T15:13:41Z"
+        }],
+        "variant": "usestudy-in",
+        "module": "titration",
+        "compliant": false,
+        "expand": {
+            "createdBy": {
+                "firstName": "Craig",
+                "lastName": "Spitzkoff",
+                "id": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+                "username": "craig@spitzkoff.com"
+            }
+        }
+    }],
+    "included": [{
+        "dob": "1978-03-16",
+        "class": "patient",
+        "id": "37d15a20-39be-435c-bba5-ffed5c7bff77",
+        "pin": "0006-0991-0433",
+        "firstName": "Craig",
+        "lastName": "Spitzkoff",
+        "gender": "male",
+        "phone": "+17818835292",
+        "email": "craig@spitzkoff.com",
+        "mrn": "321321321321321321321321",
+        "status": "active",
+        "active": true,
+        "created": "2019-08-08T15:11:47Z",
+        "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "modified": "2019-08-08T15:11:47Z",
+        "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "carePlanStatus": "created"
+    }]
+}

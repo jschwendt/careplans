@@ -1,0 +1,33 @@
+Create XY Careplan,1970-03-16 14:10,CarePlan_Test_1200.json,3,3,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Comment,,Add 1 day of adherent data followed by a baseline update of +2 units
+Add BG,1970-03-16 14:30,150,fasting
+Add Dose,1970-03-16 22:30,20
+Add BG,1970-03-17 14:10,150,fasting
+Add Dose,1970-03-17 22:30,22,true
+Comment,,Verify that the new Dose Recommendation is 22
+Run,1970-03-17 22:31,CollectData
+Verify,1970-03-17 22:32,22
+Comment,,Add 1 day of data where the user does not take the recommended dose and does not change the baseline.
+Add BG,1970-03-18 14:10,150,fasting
+Add Dose,1970-03-18 22:30,24,false
+Comment,,Verify that the Dose Recommendation is still 22
+Run,1970-03-18 22:31,CollectData
+Verify,1970-03-18 22:32,22
+Comment,,Add 3 days of adherent doses and FBGs
+Add BG,1970-03-19 14:10,150,fasting
+Add Dose,1970-03-19 22:30,22
+Add BG,1970-03-20 14:10,150,fasting
+Add Dose,1970-03-20 22:30,22
+Add BG,1970-03-21 14:10,150,fasting
+Add Dose,1970-03-21 22:30,22
+Comment,,Verify that there is no new dose recommendation since we've not yet added our 3rd adherent FBG
+Run,1970-03-21 22:31,CollectData
+Verify,1970-03-21 22:32,22
+Comment,,Add the final FBG to complete our 3 adherent pairs
+Add BG,1970-03-22 14:10,150,fasting
+Comment,,Confirm that we've received a new dose suggestion of 24
+Run,1970-03-22 22:31,ConfirmCurrentDose
+Verify,1970-03-22 22:32,24
+Add Dose,1970-03-22 22:33,24

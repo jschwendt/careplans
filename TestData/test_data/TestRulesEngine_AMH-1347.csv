@@ -1,0 +1,11 @@
+Create Careplan,1970-07-01 6:00,CarePlan_AMH-1347.json,
+Activate Careplan,1970-07-01 6:01,,
+Add BG,1970-07-01 6:01,100,fasting
+Run,1970-07-01 23:00,CollectData,
+Verify,1970-07-01 23:01,50,
+Add Dose,1970-07-01 23:02,50,
+Run,1970-07-01 23:03,CollectData,
+Add BG,1970-07-02 6:00,45,fasting
+Add BG,1970-07-02 6:00,38,nonfasting
+Run,1970-07-02 23:00,ConfirmCurrentDose,
+Verify,1970-07-02 23:01,40,

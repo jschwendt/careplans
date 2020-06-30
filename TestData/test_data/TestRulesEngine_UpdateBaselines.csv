@@ -1,0 +1,28 @@
+Comment,,This case will execute the scenario where there are two FBGs after a dose which can occur if the FBG is entered after the dose but before the end of the day
+Create Careplan,1970-03-16 14:10,CarePlan1.json,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Add Dose,1970-03-16 22:01,16,true
+Add BG,1970-03-17 10:00,120,fasting
+Add Dose,1970-03-17 22:00,16
+Add BG,1970-03-18 08:00,161,fasting
+Add Dose,1970-03-18 22:00,16
+Add BG,1970-03-19 08:00,161,fasting
+Run,1970-03-19 22:00,ConfirmCurrentDose
+Comment,,The below verification will fail if the calculation is based on the original dose suggestion, and not the new baseline of 16
+Verify,1970-03-19 22:30,19
+Comment,,Now we need to test modification of a dose, while resetting the baseline. We will modify the second dose in this interval
+Add Dose,1970-03-19 22:00,19
+Add BG,1970-03-20 10:00,120,fasting
+Add Dose,1970-03-20 22:00,19
+Comment,,The next modification will reset the baseline and start a new titration interval
+Modify Dose,1970-03-20 22:30,20,true
+Add BG,1970-03-21 08:00,161,fasting
+Add Dose,1970-03-21 22:00,20
+Add BG,1970-03-22 08:00,161,fasting
+Comment,,We should still be in CollectData mode since we reset the titraiton interval in the middle
+Run,1970-03-22 22:00,CollectData,
+Add Dose,1970-03-22 22:00,20
+Add BG,1970-03-23 08:00,161,fasting
+Run,1970-03-23 22:00,ConfirmCurrentDose,
+Verify,1970-03-23 22:01,26

@@ -1,0 +1,27 @@
+Comment,,This case will execute the scenario where there are multiple unsafe doses entered since the last adherent titraiton interval, resulting in an unsafe lockout
+Create Careplan,1970-02-08 22:22,CarePlan5.json,
+Activate Careplan,1970-02-08 22:22,,
+Run,1970-02-08 22:22,CollectData
+Add Dose,1970-02-08 22:23,20
+Add BG,1970-02-09 10:23,200,fasting
+Run,1970-02-09 22:23,CollectData
+Add Dose,1970-02-09 22:23,20
+Add BG,1970-02-10 10:23,220,fasting
+Run,1970-02-10 22:23,CollectData
+Add Dose,1970-02-10 22:23,20
+Add BG,1970-02-11 10:24,210,fasting
+Run,1970-02-11 22:24,ConfirmCurrentDose
+Verify,1970-02-11 22:25,24
+Check Dose Validity,1970-02-10 22:25,30,unsafe
+Add Dose,1970-02-11 22:25,30
+Comment,,We added an unsafe dose above - this should start a new titration interval at the next UDT-W
+Add BG,1970-02-16 10:24,250,fasting
+Run,1970-02-16 22:24,CollectData
+Check Dose Validity,1970-02-16 22:24,31,unsafe_lockout
+Comment,,Add the unsafe dose, resulting in a lockout
+Add Dose,1970-02-16 22:24,31
+Comment,,Now we need a new dose plan in order to continue titration.
+Create Careplan,1970-02-17 22:22,CarePlan5_2.json,
+Activate Careplan,1970-02-17 22:22,,
+Run,1970-02-17 22:22,CollectData
+Check Dose Validity,1970-02-17 22:24,55,unsafe

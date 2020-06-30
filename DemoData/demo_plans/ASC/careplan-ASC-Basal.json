@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "secret": "TEST",
+    "user": "TEST"
+  },
+  "data": [
+    {
+      "class": "carePlan",
+      "id": "7b593784-3e1a-4cdc-bb25-e5f0f4d31468",
+      "status": "pending",
+      "isCompliant": false,
+      "hasNotified": true,
+      "effective": "2019-06-19T18:45:12+0000",
+      "expires": "2029-06-19T18:45:12+0000",
+      "trained": "2019-06-19T18:45:25+0000",
+      "trainedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "trainedTZ": "America/New_York",
+      "sourceId": "custom",
+      "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "created": "2019-06-19T18:45:22+0000",
+      "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "lastModified": "2019-06-19T18:45:25Z",
+      "prescriptions": [
+        {
+          "class": "prescription",
+          "id": "dea366ec-82b0-40e4-8e67-a14858f3a754",
+          "category": "insulin",
+          "subCategory": "basal",
+          "uom": "unit",
+          "schedule": [
+            {
+              "class": "schedule",
+              "id": "0daca84c-4e57-4a27-aa11-98e4bfb6527c",
+              "type": "regular",
+              "daysPerWeek": 7,
+              "dailyEvent": "bedtime",
+              "dose": 20,
+              "offset": -1800
+            }
+          ],
+          "medication": {
+            "class": "medication",
+            "id": "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f",
+            "selectName": "Lantus",
+            "deliveryMethod": "injectable",
+            "frequency": "daily",
+            "strength": "U100",
+            "displayName": "Lantus®",
+            "type": "basal or premix",
+            "activeIngredient": "glargine u100",
+            "status": "active",
+            "variant": "usestudy-in",
+            "externalId": "11",
+            "devices": [
+              {
+                "id": "a12d3407-6ff6-4a80-b7bb-b11e81f6429f",
+                "name": "AllStar Connect (Rapid)",
+                "deviceType": "injection_pen",
+                "manufacturer": "Helbling, GMBH",
+                "udi": "00385541002511",
+                "status": "active",
+                "variant": "usestudy-in",
+                "medications": [
+                  "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                  "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+                ]
+              },
+              {
+                "id": "eb5be365-7fb2-4d3c-ac80-6c4eeac439c2",
+                "name": "AllStar Connect",
+                "deviceType": "injection_pen",
+                "manufacturer": "DCA Design International Limited",
+                "udi": "00385541002512",
+                "status": "active",
+                "variant": "usestudy-in",
+                "medications": [
+                  "3a2e17be-d8e6-4991-9ed6-a865fd151190",
+                  "eed872ac-886b-495f-971f-54836ccd71b5",
+                  "41dd2165-b189-42b0-ac3a-373cf0161007",
+                  "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                  "dfa60267-7a1a-4af8-a0f7-1568dd1bc15b",
+                  "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+                ]
+              }
+            ],
+            "fullName": " "
+          },
+          "device": {
+            "id": "eb5be365-7fb2-4d3c-ac80-6c4eeac439c2",
+            "name": "AllStar Connect",
+            "deviceType": "injection_pen",
+            "manufacturer": "DCA Design International Limited",
+            "udi": "00385541002512",
+            "status": "active",
+            "variant": "usestudy-in",
+            "medications": [
+              "3a2e17be-d8e6-4991-9ed6-a865fd151190",
+              "eed872ac-886b-495f-971f-54836ccd71b5",
+              "41dd2165-b189-42b0-ac3a-373cf0161007",
+              "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+              "dfa60267-7a1a-4af8-a0f7-1568dd1bc15b",
+              "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+            ]
+          },
+          "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "createdDate": "2019-06-19T18:45:22Z",
+          "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "modifiedDate": "2019-06-19T18:45:25Z"
+        },
+        {
+          "class": "prescription",
+          "id": "a71eabb7-1ef9-4369-8077-bfc92c50d011",
+          "category": "non_insulin",
+          "subCategory": "pill",
+          "uom": "unit",
+          "schedule": [
+            {
+              "class": "schedule",
+              "id": "897cbef6-58bf-4d50-a423-9ddedb6ea653",
+              "type": "regular",
+              "daysPerWeek": 7,
+              "dailyEvent": "breakfast",
+              "dose": 1,
+              "offset": 1
+            }
+          ],
+          "medication": {
+            "class": "medication",
+            "id": "06b516d6-8352-4ea1-8fef-a2226e3dc5d9",
+            "selectName": "metformin",
+            "deliveryMethod": "oral",
+            "frequency": "daily",
+            "strength": "250 mg",
+            "displayName": "metformin",
+            "type": "pill",
+            "activeIngredient": "metformin",
+            "status": "active",
+            "variant": "usestudy-in",
+            "externalId": "94",
+            "fullName": " "
+          },
+          "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "createdDate": "2019-06-19T18:45:22Z",
+          "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "modifiedDate": "2019-06-19T18:45:25Z"
+        },
+        {
+          "class": "prescription",
+          "id": "b8017c5c-b0e3-461b-9713-5740b147bd21",
+          "category": "blood_glucose",
+          "uom": "mg/dL",
+          "schedule": [
+            {
+              "class": "schedule",
+              "id": "b32ce46c-6509-4b00-b16b-5ae8581124e1",
+              "type": "fasting",
+              "daysPerWeek": 7,
+              "dailyEvent": "wake_up",
+              "dose": 0,
+              "offset": 1800
+            }
+          ],
+          "device":{
+              "id":"5466add9-5695-46eb-8d0c-dcac502b8e6c",
+              "name":"MyStar Plus",
+              "deviceType":"blood_glucose_meter",
+              "manufacturer":"Sanofi",
+              "productInfo":"https://www.mystarsanofi.com/products/plus",
+              "productIFU":"https://www.mystarsanofi.com/products/plus",
+              "udi":"00385541002509",
+              "status":"active",
+              "variant":"usestudy-in"
+          },
+          "customAttributes": {
+            "bgRanges": {
+              "acceptableLowerLimit": 44,
+              "targetLowerLimit": 80,
+              "targetUpperLimit": 130,
+              "acceptableUpperLimit": 240
+            }
+          },
+          "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "createdDate": "2019-06-19T18:45:22Z",
+          "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "modifiedDate": "2019-06-19T18:45:25Z"
+        }
+      ],
+      "variant": "usestudy-in",
+      "module": "persistence",
+      "compliant": false,
+      "hcpPhone":"+19785053266",
+      "expand": {
+        "createdBy": {
+          "firstName": "Daniel",
+          "lastName": "Palmer",
+          "id": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "username": "test233"
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "dob": "1989-05-01",
+      "class": "patient",
+      "id": "e1415f81-7eb1-4ed3-ae61-1841c0910d43",
+      "pin": "0006-0796-0216",
+      "firstName": "Alex",
+      "lastName": "Shavialevich",
+      "gender": "male",
+      "phone": "+12077499525",
+      "mrn": "13241234123455",
+      "status": "active",
+      "active": true,
+      "created": "2019-04-10T20:18:21Z",
+      "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "modified": "2019-04-10T20:18:21Z",
+      "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "stats": {
+        "id": "d7b7fff3-ea91-4ca4-a1bf-3d8d260a59ea",
+        "injectionCompliance": 100,
+        "overallCompliance": 100,
+        "glp1PillsCompliance": 100,
+        "carePlanId": "92b9eb2d-5ff8-4bdf-8d68-4ea81ac8dc9b",
+        "lastUpdated": "2019-05-29T17:49:12+0000"
+      },
+      "carePlanStatus": "pending"
+    },
+    {
+      "class": "clinic",
+      "phone": "+19785053266"
+    }
+  ]
+}

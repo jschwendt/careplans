@@ -1,0 +1,27 @@
+Create XY Careplan,1970-03-16 14:10,CarePlan_DoseChange.json,3,3,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Comment,,Add 3 days of adherent doses and high FBGs to result in a dose increase
+Check Dose Validity,1970-03-16 22:30,1,safe
+Check Dose Validity,1970-03-16 22:30,2,unsafe
+Add Dose,1970-03-16 22:30,0
+Add BG,1970-03-17 09:00,160,fasting
+Add Dose,1970-03-17 22:30,0
+Add BG,1970-03-18 09:00,160,fasting
+Add Dose,1970-03-18 22:30,0
+Add BG,1970-03-19 10:00,160,fasting
+Run,1970-03-19 22:30,ConfirmCurrentDose
+Verify,1970-03-19 22:30,1
+Comment,,Restart the Care Plan so that our Dose Suggestion starts at 0
+Create XY Careplan,1970-03-20 14:10,CarePlan_DoseChange2.json,3,3,
+Activate Careplan,1970-03-20 14:20,,
+Run,1970-03-20 22:00,CollectData,
+Comment,,Add 3 days of adherent doses and low FBGs to result in the dose remaining 0
+Add Dose,1970-03-20 22:30,0
+Add BG,1970-03-21 09:00,60,fasting
+Add Dose,1970-03-21 22:30,0
+Add BG,1970-03-22 09:00,60,fasting
+Add Dose,1970-03-22 22:30,0
+Add BG,1970-03-23 10:00,60,fasting
+Run,1970-03-23 22:30,ConfirmCurrentDose
+Verify,1970-03-23 22:30,0

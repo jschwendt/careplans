@@ -1,0 +1,12 @@
+Create Careplan,1970-03-16 14:10,CarePlan1.json,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Add Dose,1970-03-16 22:23,50
+Run,1970-03-17 22:00,CollectData,
+Check Dose Validity,1970-03-17 22:24,50,unsafe_lockout
+Add Dose,1970-03-17 22:24,50
+Create Careplan,1970-03-17 22:25,CarePlan_AMH-2860.json,
+Activate Careplan,1970-03-17 22:25,,
+Add BG,1970-03-17 22:26,20,nonfasting
+Run,1970-03-18 22:00,ConfirmCurrentDose,
+Verify,1970-03-18 22:03,14,

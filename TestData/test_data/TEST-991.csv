@@ -1,0 +1,31 @@
+Create XY Careplan,1970-03-16 14:10,CarePlanTitrationWithGaps.json,1,5,
+Activate Careplan,1970-03-16 14:20,,
+Run,1970-03-16 22:00,CollectData,
+Comment,,Add 2 days of adherent doses and high FBGs to result in a dose increase
+Add BG,1970-03-16 14:30,160,fasting
+Check Dose Validity,1970-03-16 22:30,30,safe
+Check Dose Validity,1970-03-16 22:30,31,safe
+Check Dose Validity,1970-03-16 22:30,90,unsafe
+Check Dose Validity,1970-03-16 22:30,2,unsafe
+Add Dose,1970-03-20 22:30,30
+Add BG,1970-03-21 14:10,160,fasting
+Run,1970-03-21 22:30,ConfirmCurrentDose
+Verify,1970-03-21 22:30,32
+Comment,,Add a dose then skip a couple of days of titration. Verify that you do not get a dose suggestion.
+Add Dose,1970-03-21 22:30,32
+Add BG,1970-03-26 14:10,220,fasting
+Run,1970-03-26 22:30,CollectData
+Verify,1970-03-26 22:30,32
+Add Dose,1970-03-27 22:31,32
+Comment,,Add a high FBG resulting in a dose increase after the time skip.
+Add BG,1970-03-28 14:10,230,fasting
+Run,1970-03-28 22:30,ConfirmCurrentDose
+Verify,1970-03-28 22:30,36
+Add Dose,1970-03-28 22:31,36
+Comment,,Add a hypo fasting blood glucose resulting in a dose decrease
+Add BG,1970-03-29 14:10,50,fasting
+Run,1970-03-29 22:30,ConfirmCurrentDose
+Verify,1970-03-29 22:30,29
+Add Dose,1970-03-29 22:30,29
+Run,1970-03-29 22:31,CollectData
+Verify,1970-03-29 22:31,29

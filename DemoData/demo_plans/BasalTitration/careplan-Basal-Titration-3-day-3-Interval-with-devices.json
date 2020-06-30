@@ -1,0 +1,225 @@
+{
+    "meta": {
+        "secret": "TEST",
+        "user": "TEST"
+    },
+    "data": [{
+        "class": "carePlan",
+        "id": "3c5bb1f1-69d7-4fb2-8b21-742df469a55a",
+        "status": "pending",
+        "isCompliant": false,
+        "hasNotified": false,
+        "effective": "2019-08-08T15:12:00+0000",
+        "expires": "2029-08-08T15:12:00+0000",
+        "sourceId": "custom",
+        "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "created": "2019-08-08T15:13:41+0000",
+        "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "lastModified": "2019-08-08T15:13:41Z",
+        "hcpPhone":"+19785053266",
+        "hcpAdditionalInstructions": "Remember to exercise daily.",
+        "prescriptions": [{
+            "class": "prescription",
+            "id": "f2ee1f49-ff7b-401e-bbb8-f913bf5dd8b4",
+            "category": "blood_glucose",
+            "uom": "mg/dL",
+            "schedule": [{
+                "class": "schedule",
+                "id": "7323606a-9149-4fb4-94a6-6ac60c4a5b1e",
+                "daysPerWeek": 7,
+                "dailyEvent": "wake_up",
+                "dose": 0.0,
+                "offset": 1800,
+                "type": "fasting"
+            }],
+            "device":{
+                "id":"5466add9-5695-46eb-8d0c-dcac502b8e6c",
+                "name":"MyStar Plus",
+                "deviceType":"blood_glucose_meter",
+                "manufacturer":"Sanofi",
+                "productInfo":"https://www.mystarsanofi.com/products/plus",
+                "productIFU":"https://www.mystarsanofi.com/products/plus",
+                "udi":"00385541002509",
+                "status":"active",
+                "variant":"usestudy-in"
+            },
+            "rules": [{
+                "class": "rule",
+                "id": "2cf6ae6c-b539-4b7e-9adb-a8e01a335e52",
+                "type": "hypo",
+                "action": "notify_care_team_and_continue_plan",
+                "lowerBound": 0,
+                "lowerBoundComparisonOperator": ">=",
+                "upperBound": 54,
+                "upperBoundComparisonOperator": "<",
+                "uom": "mg/dl"
+            }],
+            "customAttributes": {
+                "bgRanges": {
+                    "targetLowerLimit": 100,
+                    "targetUpperLimit": 180
+                }
+            },
+            "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+            "createdDate": "2019-08-08T15:13:41Z",
+            "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+            "modifiedDate": "2019-08-08T15:13:41Z"
+        },
+        {
+            "class": "prescription",
+            "id": "36dc0b7c-4353-49e7-b3cc-046083a624c7",
+            "category": "insulin",
+            "subCategory": "basal",
+            "uom": "unit",
+            "schedule": [
+                {
+                    "class": "schedule",
+                    "id": "1b2309cc-7448-471e-aa99-44406260be4f",
+                    "type": "regular",
+                    "daysPerWeek": 7,
+                    "dailyEvent": "bedtime",
+                    "dose": 20,
+                    "offset": -1800
+                }
+            ],
+            "medication": {
+                "class": "medication",
+                "id": "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f",
+                "selectName": "Lantus",
+                "deliveryMethod": "injectable",
+                "frequency": "daily",
+                "strength": "U100",
+                "displayName": "Lantus®",
+                "type": "basal or premix",
+                "activeIngredient": "glargine u100",
+                "status": "active",
+                "variant": "usestudy-in",
+                "externalId": "11",
+                "devices": [
+                    {
+                        "id": "a12d3407-6ff6-4a80-b7bb-b11e81f6429f",
+                        "name": "AllStar Connect (Rapid)",
+                        "deviceType": "injection_pen",
+                        "manufacturer": "Helbling, GMBH",
+                        "udi": "00385541002511",
+                        "status": "active",
+                        "variant": "usestudy-in",
+                        "medications": [
+                            "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                            "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+                        ]
+                    },
+                    {
+                        "id": "eb5be365-7fb2-4d3c-ac80-6c4eeac439c2",
+                        "name": "AllStar Connect",
+                        "deviceType": "injection_pen",
+                        "manufacturer": "DCA Design International Limited",
+                        "udi": "00385541002512",
+                        "status": "active",
+                        "variant": "usestudy-in",
+                        "medications": [
+                            "3a2e17be-d8e6-4991-9ed6-a865fd151190",
+                            "eed872ac-886b-495f-971f-54836ccd71b5",
+                            "114dfb22-19d5-4390-badf-b759b5085700",
+                            "5f63e3d7-b34e-4aaf-8ff8-1d3898d14b78",
+                            "41dd2165-b189-42b0-ac3a-373cf0161007",
+                            "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                            "dfa60267-7a1a-4af8-a0f7-1568dd1bc15b",
+                            "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+                        ]
+                    }
+                ],
+                "fullName": " "
+            },
+            "device": {
+                "id": "eb5be365-7fb2-4d3c-ac80-6c4eeac439c2",
+                "name": "AllStar Connect",
+                "deviceType": "injection_pen",
+                "manufacturer": "DCA Design International Limited",
+                "udi": "00385541002512",
+                "status": "active",
+                "variant": "usestudy-in",
+                "medications": [
+                    "3a2e17be-d8e6-4991-9ed6-a865fd151190",
+                    "eed872ac-886b-495f-971f-54836ccd71b5",
+                    "114dfb22-19d5-4390-badf-b759b5085700",
+                    "5f63e3d7-b34e-4aaf-8ff8-1d3898d14b78",
+                    "41dd2165-b189-42b0-ac3a-373cf0161007",
+                    "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                    "dfa60267-7a1a-4af8-a0f7-1568dd1bc15b",
+                    "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+                ]
+            },
+            "customAttributes": {
+                "titration": {
+                    "titrationCycleLength": "P3D",
+                    "bloodGlucoseAverageMethod": "median",
+                    "adjustmentRanges": [
+                        {
+                            "lowerBound": 180,
+                            "lowerBoundComparisonOperator": ">=",
+                            "boundComparison": "absolute",
+                            "boundUom": "mg/dL",
+                            "doseChangeUom": "unit",
+                            "doseChangeValue": 1
+                        }, {
+                            "lowerBound": 100,
+                            "lowerBoundComparisonOperator": ">=",
+                            "upperBound": 180,
+                            "upperBoundComparisonOperator": "<",
+                            "boundComparison": "absolute",
+                            "boundUom": "mg/dL",
+                            "doseChangeUom": "unit",
+                            "doseChangeValue": 0
+                        }, {
+                            "lowerBound": 0,
+                            "lowerBoundComparisonOperator": ">=",
+                            "upperBound": 100,
+                            "upperBoundComparisonOperator": "<",
+                            "boundComparison": "absolute",
+                            "boundUom": "mg/dL",
+                            "doseChangeUom": "unit",
+                            "doseChangeValue": -2
+                        }],
+                    "maxDose": 50,
+                    "minAdherencePairs": 3
+                }
+            },
+            "createdBy": "b6021e75-9e05-4cd3-919e-7bc0521f5e2c",
+            "createdDate": "2019-08-15T17:31:44Z",
+            "modifiedBy": "b6021e75-9e05-4cd3-919e-7bc0521f5e2c",
+            "modifiedDate": "2019-08-15T17:31:44Z"
+        }
+       ],
+        "variant": "usestudy-in",
+        "module": "titration",
+        "compliant": false,
+        "expand": {
+            "createdBy": {
+                "firstName": "Craig",
+                "lastName": "Spitzkoff",
+                "id": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+                "username": "craig@spitzkoff.com"
+            }
+        }
+    }],
+    "included": [{
+        "dob": "1978-03-16",
+        "class": "patient",
+        "id": "37d15a20-39be-435c-bba5-ffed5c7bff77",
+        "pin": "0006-0991-0433",
+        "firstName": "Craig",
+        "lastName": "Spitzkoff",
+        "gender": "male",
+        "phone": "+17818835292",
+        "email": "craig@spitzkoff.com",
+        "mrn": "321321321321321321321321",
+        "status": "active",
+        "active": true,
+        "created": "2019-08-08T15:11:47Z",
+        "createdBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "modified": "2019-08-08T15:11:47Z",
+        "modifiedBy": "3b44c284-6a3f-4420-9088-ecf49b9a996c",
+        "carePlanStatus": "created"
+    }]
+}

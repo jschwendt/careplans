@@ -1,0 +1,57 @@
+Create XY Careplan,1970-03-01 14:10,CarePlanXofY_DoseSafety.json,5,5,
+Activate Careplan,1970-03-01 14:20,,
+Check Dose Validity,1970-03-01 22:30,20,safe
+Check Dose Validity,1970-03-01 22:30,11,unsafe
+Comment,,Enter 5 doses with high FBGs to trigger a dose increase
+Add Dose,1970-03-01 22:30,20
+Add BG,1970-03-02 14:10,160,fasting
+Add Dose,1970-03-02 22:30,20
+Add BG,1970-03-03 14:10,160,fasting
+Check Dose Validity,1970-03-03 22:30,20,safe
+Check Dose Validity,1970-03-03 22:30,99,unsafe
+Check Dose Validity,1970-03-03 22:30,4,unsafe
+Check Dose Validity,1970-03-03 22:30,201,unsafe
+Add Dose,1970-03-03 22:30,20
+Add BG,1970-03-04 14:10,160,fasting
+Add Dose,1970-03-04 22:30,20
+Add BG,1970-03-05 14:10,160,fasting
+Add Dose,1970-03-05 22:30,20
+Add BG,1970-03-06 14:10,160,fasting
+Run,1970-03-06 22:30,ConfirmCurrentDose
+Verify,1970-03-06 22:30,24
+Comment,,Now rebaseline the user with something higher than 24.
+Add Dose,1970-03-06 22:31,26,true
+Verify,1970-03-06 22:32,26
+Add BG,1970-03-07 14:10,95,fasting
+Add Dose,1970-03-07 22:30,26
+Add BG,1970-03-08 14:10,95,fasting
+Add Dose,1970-03-08 22:30,26
+Add BG,1970-03-09 14:10,95,fasting
+Comment,,Now ask if another increase would be safe. It should be - but should also indicate that the baseline has already been modified.
+Check Dose Validity,1970-03-09 22:29,27,safe_modified_baseline
+Add Dose,1970-03-09 22:30,26
+Add BG,1970-03-10 14:10,95,fasting
+Comment,,Verify that safe dose increases indicate the baseline has already been modified. Verify that 31 is a safe dose. Verify that 32 is an unsafe dose. Verify that 16 is a safe dose. Verify that 15 is an unsafe dose
+Check Dose Validity,1970-03-10 22:26,31,safe_modified_baseline
+Check Dose Validity,1970-03-10 22:27,32,unsafe
+Check Dose Validity,1970-03-10 22:28,16,safe
+Check Dose Validity,1970-03-10 22:29,15,unsafe
+Add Dose,1970-03-10 22:30,26
+Comment,,Modify the dose to any unsafe dose
+Modify Dose,1970-03-10 22:31,32
+Comment,,Modify the dose to any other unsafe dose
+Modify Dose,1970-03-10 22:32,15
+Comment,,Modify the dose back to a safe dose
+Modify Dose,1970-03-10 22:33,26
+Comment,,Verify that 32 and 15 are still unsafe doses that do not trigger a lockout since we modified the last dose back to a safe dose.
+Check Dose Validity,1970-03-10 22:34,32,unsafe
+Check Dose Validity,1970-03-10 22:35,15,unsafe
+Comment,,Modify the dose back to an unsafe dose of 32.
+Modify Dose,1970-03-10 22:36,32
+Comment,,Verify that any unsafe dose now results in a lockout
+Check Dose Validity,1970-03-10 22:37,32,unsafe_lockout
+Check Dose Validity,1970-03-10 22:38,15,unsafe_lockout
+Add BG,1970-03-11 14:10,95,fasting
+Comment,,Ensure that the engine returns CollectData due to our unsafe modified dose of 32
+Run,1970-03-11 22:30,CollectData
+Verify,1970-03-11 22:30,26

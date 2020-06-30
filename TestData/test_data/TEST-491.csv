@@ -1,0 +1,17 @@
+Create Careplan,2018-03-16 14:10,CarePlan_Test-491.json,
+Activate Careplan,2018-03-16 14:20,,
+Run,2018-03-16 22:00,CollectData,
+Comment,,TESTSTEP 2
+Add Dose,2018-03-16 22:30,18
+Comment,,TESTSTEP 3
+Add BG,2018-03-17 06:00,163,fasting
+Comment,,TESTSTEP 4
+Add BG,1990-03-17 09:00,60,nonfasting
+Comment,,TESTSTEP 6
+Run,2018-03-17 22:00,ConfirmCurrentDose
+Verify,2018-03-17 22:00,16
+Comment,,TESTSTEP 7
+Add BG,1990-03-17 12:00,94,nonfasting
+Comment,,TESTSTEP 8
+Run,2018-03-17 22:00,ConfirmCurrentDose
+Verify,2018-03-17 22:00,16

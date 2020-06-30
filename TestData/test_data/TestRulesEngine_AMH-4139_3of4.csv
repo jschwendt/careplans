@@ -1,0 +1,18 @@
+Comment,,FAILS if titration engine does not create dose plan window on day one
+Create XY Careplan,1970-04-01 14:10,CarePlanXofY_AMH-4139.json,1,2,
+Activate Careplan,1970-04-01 14:20,,
+Comment,,Add 1 day of adherent doses and high FBGs over 2 days to result in a dose increase skipping the first dose/fbg.
+Run,1970-04-02 22:30,CollectData
+Add Dose,1970-04-02 22:30,30
+Add BG,1970-04-03 14:10,140,fasting
+Break
+Run,1970-04-03 22:30,ConfirmCurrentDose
+Verify,1970-04-03 22:30,32
+Comment,,Add 1 day of adherent doses and High FBGs over 2 days to result in a dose increase skipping 10 days after the first pair.
+Add Dose,1970-04-03 22:30,32
+Add BG,1970-04-04 14:10,140,fasting
+Comment,,Ensure the dose suggestion is still 32 and we still need to collect data
+Run,1970-04-04 22:30,CollectData
+Break
+Run,1970-04-14 22:30,ConfirmCurrentDose
+Verify,1970-04-14 22:30,34
