@@ -1,0 +1,448 @@
+{
+  "meta": {
+    "secret": "TEST",
+    "user": "TEST"
+  },
+  "data": [
+    {
+      "class": "carePlan",
+      "id": "7b593784-0000-4cdc-bb25-e5f0f4d31468",
+      "status": "pending",
+      "isCompliant": false,
+      "hasNotified": true,
+      "effective": "2019-06-19T18:45:12+0000",
+      "expires": "2029-06-19T18:45:12+0000",
+      "trained": "2019-06-19T18:45:25+0000",
+      "trainedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "trainedTZ": "America/New_York",
+      "sourceId": "custom",
+      "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "created": "2019-06-19T18:45:22+0000",
+      "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+      "lastModified": "2019-06-19T18:45:25Z",
+      "prescriptions": [
+        {
+          "class": "prescription",
+          "id": "dea366ec-82b0-40e4-8e67-a14858f3a754",
+          "category": "insulin",
+          "subCategory": "basal",
+          "uom": "unit",
+          "schedule": [
+            {
+              "class": "schedule",
+              "id": "0daca84c-4e57-4a27-aa11-98e4bfb6527c",
+              "type": "regular",
+              "daysPerWeek": 7,
+              "dailyEvent": "bedtime",
+              "dose": 20,
+              "offset": -1800
+            }
+          ],
+          "medication": {
+            "class": "medication",
+            "id": "4136e587-4adc-4b12-ae2f-e2b2e7443e3a",
+            "selectName": "Toujeo Solostar",
+            "deliveryMethod": "injectable",
+            "frequency": "daily",
+            "strength": "U300",
+            "displayName": "Toujeo® SoloStar®",
+            "type": "basal or premix",
+            "activeIngredient": "glargine u300",
+            "status": "active",
+            "variant": "usestudy-in",
+            "externalId": "12",
+            "devices": [
+              {
+                "id": "a12d3407-0000-4a80-b7bb-b11e81f6429f",
+                "name": "Mallya",
+                "deviceType": "injection_attachment",
+                "manufacturer": "Biocorp",
+                "udi": "00385541000000",
+                "status": "active",
+                "variant": "usestudy-in",
+                "medications": [
+                  "4136e587-4adc-4b12-ae2f-e2b2e7443e3a"
+                ]
+              }
+            ],
+            "fullName": " "
+          },
+          "device": {
+            "id": "a12d3407-0000-4a80-b7bb-b11e81f6429f",
+            "name": "Mallya",
+            "deviceType": "injection_attachment",
+            "manufacturer": "Biocorp",
+            "udi": "00385541000000",
+            "status": "active",
+            "variant": "usestudy-in",
+            "medications": [
+              "4136e587-4adc-4b12-ae2f-e2b2e7443e3a"
+            ]
+          },
+          "createdBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "createdDate": "2019-06-19T18:45:22Z",
+          "modifiedBy": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "modifiedDate": "2019-06-19T18:45:25Z"
+        },
+        {
+            "category" : "blood_glucose",
+            "customAttributes" : {
+                "bgRanges" : {
+                    "targetLowerLimit" : 70,
+                    "acceptableLowerLimit" : 54,
+                    "targetUpperLimit" : 180,
+                    "acceptableUpperLimit" : 250
+                }
+            },
+            "createdDate" : "2019-07-15T13:50:50Z",
+            "id" : "e710c96a-b81d-420f-bea6-b6ac8a22f45e",
+            "modifiedBy" : "fbce1465-31f2-4007-9aac-68f03a61729f",
+            "modifiedDate" : "2019-07-15T13:51:46Z",
+            "class" : "prescription",
+            "createdBy" : "fbce1465-31f2-4007-9aac-68f03a61729f",
+            "uom" : "mg\/dL",
+            "schedule" : [
+                {
+                    "daysPerWeek" : 7,
+                    "id" : "10fd688b-e8c4-4b70-a269-6badc14a84de",
+                    "offset" : 1800,
+                    "class" : "schedule",
+                    "type" : "fasting",
+                    "dailyEvent" : "wake_up"
+                }
+            ]
+        }
+      ],
+      "variant": "usestudy-in",
+      "module": "persistence",
+      "compliant": false,
+      "hcpPhone":"+19785053266",
+      "expand": {
+        "createdBy": {
+          "firstName": "Daniel",
+          "lastName": "Palmer",
+          "id": "e5ff4dc3-80a1-4fd2-b396-8cc572542e94",
+          "username": "test233"
+        }
+      }
+    }
+  ],
+  "included" : [
+      {
+          "id" : "fe876902-40ed-4856-8f85-7931bf881669",
+          "mrn" : "0000000027",
+          "lastName" : "Torres",
+          "firstName" : "Terry",
+          "phone" : "+12015277859",
+          "status" : "active",
+          "active" : true,
+          "dob" : "1987-05-07",
+          "modified" : "2019-04-17T16:11:36Z",
+          "stats" : {
+              "overallCompliance" : 29,
+              "hypoCount" : 0,
+              "bgCompliance" : 67,
+              "id" : "d812fcea-8c8d-41e1-82b4-36b75c5fe03c",
+              "avgBgLevel" : 67,
+              "glp1PillsCompliance" : 9,
+              "hyperCount" : 0,
+              "targetCount" : 0,
+              "carePlanId" : "ee0d9f35-094b-413e-948d-d7b428a3a7d1",
+              "lastUpdated" : "2019-07-08T19:40:48+0000",
+              "injectionCompliance" : 9
+          },
+          "modifiedBy" : "fbce1465-31f2-4007-9aac-68f03a61729f",
+          "carePlanStatus" : "pending",
+          "createdBy" : "fbce1465-31f2-4007-9aac-68f03a61729f",
+          "created" : "2019-04-17T16:11:36Z",
+          "pin" : "0009-0151-0253",
+          "class" : "patient",
+          "gender" : "male",
+          "email" : "terrytorres@gmail.com"
+      },
+      {
+          "id" : "56fe37d0-80c1-47c4-8f8e-b9952c322597",
+          "phone" : "+12015277859",
+          "npi" : "0000000027",
+          "users" : [
+              {
+                  "langId" : "en-US",
+                  "created" : "2019-04-17T16:09:18Z",
+                  "class" : "user",
+                  "status" : "active",
+                  "lastModified" : "2019-04-17T16:11:09Z",
+                  "category" : "CLINIC",
+                  "roleIds" : [
+                      "PATIENT_NON_CLINICAL_MANAGE",
+                      "PATIENT_CLINICAL_MANAGE",
+                      "PATIENT_DOSE_PLAN_MANAGE",
+                      "CLINIC_ADMIN"
+                  ],
+                  "id" : "fbce1465-31f2-4007-9aac-68f03a61729f",
+                  "identifier" : "fbce1465-31f2-4007-9aac-68f03a61729f",
+                  "email" : "terrytorres@gmail.com",
+                  "permissions" : [
+                      {
+                          "description" : "Permission to update a dose plan",
+                          "id" : "CARE_PLAN_UPDATE",
+                          "value" : "CARE_PLAN_UPDATE",
+                          "intValue" : 11,
+                          "class" : "permission",
+                          "name" : "Update Dose Plan"
+                      },
+                      {
+                          "description" : "Permission to delete a dose plan",
+                          "id" : "CARE_PLAN_DELETE",
+                          "value" : "CARE_PLAN_DELETE",
+                          "intValue" : 12,
+                          "class" : "permission",
+                          "name" : "Delete Dose Plan"
+                      },
+                      {
+                          "description" : "Permission to view a dose plan",
+                          "id" : "CARE_PLAN_READ",
+                          "value" : "CARE_PLAN_READ",
+                          "intValue" : 10,
+                          "class" : "permission",
+                          "name" : "View Dose Plan"
+                      },
+                      {
+                          "description" : "Permission to create a new dose plan",
+                          "id" : "CARE_PLAN_CREATE",
+                          "value" : "CARE_PLAN_CREATE",
+                          "intValue" : 9,
+                          "class" : "permission",
+                          "name" : "Create Dose Plan"
+                      },
+                      {
+                          "description" : "Permission to activate or deactivate care plans",
+                          "id" : "CARE_PLAN_STATUS",
+                          "value" : "CARE_PLAN_STATUS",
+                          "intValue" : 29,
+                          "class" : "permission",
+                          "name" : "Activate or deactivate care plans"
+                      },
+                      {
+                          "description" : "Permission to delete a dose plan template",
+                          "id" : "TEMPLATE_DELETE",
+                          "value" : "TEMPLATE_DELETE",
+                          "intValue" : 16,
+                          "class" : "permission",
+                          "name" : "Delete Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to view a dose plan template",
+                          "id" : "TEMPLATE_READ",
+                          "value" : "TEMPLATE_READ",
+                          "intValue" : 14,
+                          "class" : "permission",
+                          "name" : "View Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to update a dose plan template",
+                          "id" : "TEMPLATE_UPDATE",
+                          "value" : "TEMPLATE_UPDATE",
+                          "intValue" : 15,
+                          "class" : "permission",
+                          "name" : "Update Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to create a new dose plan template",
+                          "id" : "TEMPLATE_CREATE",
+                          "value" : "TEMPLATE_CREATE",
+                          "intValue" : 13,
+                          "class" : "permission",
+                          "name" : "Create Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to delete patient information",
+                          "id" : "PATIENT_DELETE",
+                          "value" : "PATIENT_DELETE",
+                          "intValue" : 4,
+                          "class" : "permission",
+                          "name" : "Delete Patient"
+                      },
+                      {
+                          "description" : "Permission to notify patients",
+                          "id" : "PATIENT_NOTIFY",
+                          "value" : "PATIENT_NOTIFY",
+                          "intValue" : 26,
+                          "class" : "permission",
+                          "name" : "Notify Patient"
+                      },
+                      {
+                          "description" : "Permission to create a patient",
+                          "id" : "PATIENT_CREATE",
+                          "value" : "PATIENT_CREATE",
+                          "intValue" : 1,
+                          "class" : "permission",
+                          "name" : "Create Patient"
+                      },
+                      {
+                          "description" : "Permission to view patient information",
+                          "id" : "PATIENT_READ",
+                          "value" : "PATIENT_READ",
+                          "intValue" : 2,
+                          "class" : "permission",
+                          "name" : "View Patient"
+                      },
+                      {
+                          "description" : "Permission to update patient information",
+                          "id" : "PATIENT_UPDATE",
+                          "value" : "PATIENT_UPDATE",
+                          "intValue" : 3,
+                          "class" : "permission",
+                          "name" : "Update Patient"
+                      },
+                      {
+                          "description" : "Permission to assign patients to an HCP",
+                          "id" : "PATIENT_ASSIGN",
+                          "value" : "PATIENT_ASSIGN",
+                          "intValue" : 25,
+                          "class" : "permission",
+                          "name" : "Assign Patient"
+                      },
+                      {
+                          "description" : "Permission to assign a user to a clinic",
+                          "id" : "USER_ASSIGN",
+                          "value" : "USER_ASSIGN",
+                          "intValue" : 27,
+                          "class" : "permission",
+                          "name" : "Assign User"
+                      },
+                      {
+                          "description" : "Permission to create a user",
+                          "id" : "USER_CREATE",
+                          "value" : "USER_CREATE",
+                          "intValue" : 5,
+                          "class" : "permission",
+                          "name" : "Create User"
+                      },
+                      {
+                          "description" : "Permission to view a user",
+                          "id" : "USER_READ",
+                          "value" : "USER_READ",
+                          "intValue" : 6,
+                          "class" : "permission",
+                          "name" : "View User"
+                      },
+                      {
+                          "description" : "Permission to update a user",
+                          "id" : "USER_UPDATE",
+                          "value" : "USER_UPDATE",
+                          "intValue" : 7,
+                          "class" : "permission",
+                          "name" : "Update User"
+                      },
+                      {
+                          "description" : "Permission to assign roles to a user",
+                          "id" : "ROLE_ASSIGN",
+                          "value" : "ROLE_ASSIGN",
+                          "intValue" : 28,
+                          "class" : "permission",
+                          "name" : "Assign Roles"
+                      },
+                      {
+                          "description" : "Permission to delete a user",
+                          "id" : "USER_DELETE",
+                          "value" : "USER_DELETE",
+                          "intValue" : 8,
+                          "class" : "permission",
+                          "name" : "Delete User"
+                      },
+                      {
+                          "description" : "Permission to delete a dose plan template",
+                          "id" : "TEMPLATE_DELETE",
+                          "value" : "TEMPLATE_DELETE",
+                          "intValue" : 16,
+                          "class" : "permission",
+                          "name" : "Delete Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to view a dose plan template",
+                          "id" : "TEMPLATE_READ",
+                          "value" : "TEMPLATE_READ",
+                          "intValue" : 14,
+                          "class" : "permission",
+                          "name" : "View Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to update a dose plan template",
+                          "id" : "TEMPLATE_UPDATE",
+                          "value" : "TEMPLATE_UPDATE",
+                          "intValue" : 15,
+                          "class" : "permission",
+                          "name" : "Update Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to create a new dose plan template",
+                          "id" : "TEMPLATE_CREATE",
+                          "value" : "TEMPLATE_CREATE",
+                          "intValue" : 13,
+                          "class" : "permission",
+                          "name" : "Create Dose Plan Template"
+                      },
+                      {
+                          "description" : "Permission to view an observation",
+                          "id" : "OBSERVATION_READ",
+                          "value" : "OBSERVATION_READ",
+                          "intValue" : 18,
+                          "class" : "permission",
+                          "name" : "View Observation"
+                      },
+                      {
+                          "description" : "Permission to create a new observation",
+                          "id" : "OBSERVATION_CREATE",
+                          "value" : "OBSERVATION_CREATE",
+                          "intValue" : 17,
+                          "class" : "permission",
+                          "name" : "Create Observation"
+                          
+                      },
+                      {
+                          "description" : "Permission to update an observation",
+                          "id" : "OBSERVATION_UPDATE",
+                          "value" : "OBSERVATION_UPDATE",
+                          "intValue" : 19,
+                          "class" : "permission",
+                          "name" : "Update Observation"
+                      }
+                  ],
+                  "phone" : "+1 201 527 7859",
+                  "firstName" : "Terry",
+                  "expires" : "2029-04-14T16:11:09Z",
+                  "hash" : "da28b4c90ce6c3a4a3b855ea1b6209cfa41b3e8c",
+                  "variants" : [
+                      "usestudy-in"
+                  ],
+                  "eulaAcceptedVersion" : "SAN-006442 Revision 02 Attachment 1 Essex Application EULA",
+                  "eulaAcceptedDate" : "2019-04-17T16:10:57Z",
+                  "lastName" : "Torres",
+                  "fullName" : "Terry Torres",
+                  "username" : "terrytorres"
+              }
+          ],
+          "modules" : [
+              "persistence"
+          ],
+          "lastModified" : "2019-04-17T16:09:18Z",
+          "address" : [
+              {
+                  "use" : "work",
+                  "city" : "Framingham",
+                  "country" : "USA",
+                  "id" : "927c41c8-4908-43e4-85bf-3427a73d3d29",
+                  "postalCode" : "01702-6864",
+                  "class" : "address",
+                  "type" : "postal",
+                  "state" : "MA"
+              }
+          ],
+          "variant" : "usestudy-in",
+          "created" : "2019-04-17T16:04:59Z",
+          "class" : "clinic",
+          "name" : "Terry Test Clinic",
+          "status" : "active"
+      }
+  ]
+}

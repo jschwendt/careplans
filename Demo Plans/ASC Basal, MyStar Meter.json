@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "secret": "TEST",
+    "user": "TEST"
+  },
+  "data": [
+    {
+      "class": "carePlan",
+      "id": "dc8eda33-a872-4b46-898e-22f989807d66",
+      "status": "pending",
+      "isCompliant": false,
+      "hasNotified": false,
+      "effective": "2019-10-08T17:48:34+0000",
+      "expires": "2029-10-08T17:48:34+0000",
+      "sourceId": "custom",
+      "createdBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+      "created": "2019-10-08T17:48:35+0000",
+      "modifiedBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+      "lastModified": "2019-10-08T17:49:01Z",
+      "prescriptions": [
+        {
+          "class": "prescription",
+          "id": "6c57b826-da7e-4c91-aa58-e3d1236ba45e",
+          "category": "insulin",
+          "subCategory": "basal",
+          "uom": "unit",
+          "schedule": [
+            {
+              "class": "schedule",
+              "id": "a52cadef-4336-4da6-b3c2-2830e2b5010a",
+              "type": "regular",
+              "daysPerWeek": 7,
+              "dailyEvent": "dinner",
+              "dose": 20,
+              "offset": -1800
+            }
+          ],
+          "medication": {
+            "class": "medication",
+            "id": "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f",
+            "selectName": "Lantus",
+            "deliveryMethod": "injectable",
+            "frequency": "daily",
+            "strength": "U100",
+            "displayName": "Lantus®",
+            "type": "basal or premix",
+            "activeIngredient": "glargine u100",
+            "status": "active",
+            "variant": "usestudy-in",
+            "externalId": "11",
+            "devices": [
+              {
+                "id": "a12d3407-6ff6-4a80-b7bb-b11e81f6429f",
+                "name": "AllStar Connect (Rapid)",
+                "deviceType": "injection_pen",
+                "manufacturer": "Helbling, GMBH",
+                "udi": "00385541002511",
+                "status": "active",
+                "variant": "usestudy-in",
+                "medications": [
+                  "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                  "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f"
+                ],
+                "created": "2019-09-30T21:19:55Z",
+                "createdBy": "system",
+                "modified": "2019-09-30T21:19:55Z",
+                "modifiedBy": "system"
+              },
+              {
+                "id": "eb5be365-7fb2-4d3c-ac80-6c4eeac439c2",
+                "name": "AllStar Connect",
+                "deviceType": "injection_pen",
+                "manufacturer": "DCA Design International Limited",
+                "udi": "00385541002512",
+                "status": "active",
+                "variant": "usestudy-in",
+                "medications": [
+                  "3a2e17be-d8e6-4991-9ed6-a865fd151190",
+                  "7f948671-5024-47f5-a992-70dc5e220857",
+                  "114dfb22-19d5-4390-badf-b759b5085700",
+                  "fdd82994-5753-4be8-befa-211b410f51f6",
+                  "5f63e3d7-b34e-4aaf-8ff8-1d3898d14b78",
+                  "41dd2165-b189-42b0-ac3a-373cf0161007",
+                  "e5d2c858-44af-446b-a38c-15be20d17757",
+                  "99332cb7-5570-42ab-aebf-086ad9061213",
+                  "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+                  "dfa60267-7a1a-4af8-a0f7-1568dd1bc15b",
+                  "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f",
+                  "3507a981-cb8a-4e8b-8ac3-3c629b13b12d"
+                ],
+                "created": "2019-09-30T21:19:55Z",
+                "createdBy": "system",
+                "modified": "2019-09-30T21:19:55Z",
+                "modifiedBy": "system"
+              }
+            ],
+            "modules": [
+              "titration",
+              "persistence"
+            ],
+            "fullName": " "
+          },
+          "device": {
+            "id": "eb5be365-7fb2-4d3c-ac80-6c4eeac439c2",
+            "name": "AllStar Connect",
+            "deviceType": "injection_pen",
+            "manufacturer": "DCA Design International Limited",
+            "udi": "00385541002512",
+            "status": "active",
+            "variant": "usestudy-in",
+            "medications": [
+              "3a2e17be-d8e6-4991-9ed6-a865fd151190",
+              "7f948671-5024-47f5-a992-70dc5e220857",
+              "114dfb22-19d5-4390-badf-b759b5085700",
+              "fdd82994-5753-4be8-befa-211b410f51f6",
+              "5f63e3d7-b34e-4aaf-8ff8-1d3898d14b78",
+              "41dd2165-b189-42b0-ac3a-373cf0161007",
+              "e5d2c858-44af-446b-a38c-15be20d17757",
+              "99332cb7-5570-42ab-aebf-086ad9061213",
+              "f79d2dd6-a574-414d-aad9-859ac7c3e7b3",
+              "dfa60267-7a1a-4af8-a0f7-1568dd1bc15b",
+              "fd3eea4c-bcbb-4719-87b0-b9a2e7d4421f",
+              "3507a981-cb8a-4e8b-8ac3-3c629b13b12d"
+            ],
+            "created": "2019-09-30T21:19:55Z",
+            "createdBy": "system",
+            "modified": "2019-09-30T21:19:55Z",
+            "modifiedBy": "system"
+          },
+          "customAttributes": {},
+          "createdBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "createdDate": "2019-10-08T17:49:01Z",
+          "modifiedBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "modifiedDate": "2019-10-08T17:49:18Z"
+        },
+        {
+          "class": "prescription",
+          "id": "87d258a9-84e9-4bbb-bc7a-2e73029ea00c",
+          "category": "blood_glucose",
+          "uom": "mg/dL",
+          "schedule": [
+            {
+              "class": "schedule",
+              "id": "f3fa1958-f615-4500-9157-87bfbdb79511",
+              "type": "fasting",
+              "daysPerWeek": 7,
+              "dailyEvent": "wake_up",
+              "offset": 0
+            }
+          ],
+          "device": {
+            "id": "5466add9-5695-46eb-8d0c-dcac502b8e6c",
+            "name": "MyStar Plus",
+            "deviceType": "blood_glucose_meter",
+            "manufacturer": "Sanofi",
+            "productInfo": "https://www.mystarsanofi.com/products/plus",
+            "productIFU": "https://www.mystarsanofi.com/products/plus",
+            "udi": "00385541002509",
+            "status": "active",
+            "variant": "usestudy-in",
+            "created": "2019-09-30T21:19:55Z",
+            "createdBy": "system",
+            "modified": "2019-09-30T21:19:55Z",
+            "modifiedBy": "system"
+          },
+          "customAttributes": {
+            "bgRanges": {
+              "acceptableLowerLimit": 54,
+              "targetLowerLimit": 70,
+              "targetUpperLimit": 180,
+              "acceptableUpperLimit": 250
+            }
+          },
+          "createdBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "createdDate": "2019-10-08T17:48:35Z",
+          "modifiedBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "modifiedDate": "2019-10-08T17:49:18Z"
+        }
+      ],
+      "variant": "usestudy-in",
+      "module": "persistence",
+      "compliant": false,
+      "hcpPhone": "+19785053266",
+      "expand": {
+        "createdBy": {
+          "firstName": "Craig",
+          "lastName": "Spitzkoff",
+          "id": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "username": "craig+201908019@spitzkoff.com"
+        }
+      }
+    }
+  ],
+  "included": [
+      {
+          "dob": "1989-05-01",
+          "class": "patient",
+          "id": "ba3e106c-ab63-4d4c-a659-3c2561f3fc08",
+          "pin": "0008-0635-0718",
+          "firstName": "Alex",
+          "lastName": "Shavialevich",
+          "gender": "male",
+          "phone": "+12077499525",
+          "mrn": "123098756431647687",
+          "status": "active",
+          "active": true,
+          "created": "2019-08-28T14:51:41Z",
+          "createdBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "modified": "2019-08-28T14:51:41Z",
+          "modifiedBy": "6e093a29-6b13-404c-8297-1b7421996e24",
+          "carePlanStatus": "active"
+      }
+  ]
+}
