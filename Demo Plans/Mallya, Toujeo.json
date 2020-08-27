@@ -54,7 +54,7 @@
             "devices": [
               {
                 "id": "a12d3407-0000-4a80-b7bb-b11e81f6429f",
-                "name": "Mallya",
+                "name": "Mallya®",
                 "deviceType": "injection_attachment",
                 "manufacturer": "Biocorp",
                 "udi": "00385541000000",
@@ -69,7 +69,7 @@
           },
           "device": {
             "id": "a12d3407-0000-4a80-b7bb-b11e81f6429f",
-            "name": "Mallya",
+            "name": "Mallya®",
             "deviceType": "injection_attachment",
             "manufacturer": "Biocorp",
             "udi": "00385541000000",
