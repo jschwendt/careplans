@@ -1,0 +1,13 @@
+Comment,,This case will execute the scenario where we edit a dose to trigger an unsafe lockout
+Create Careplan,1970-02-08 22:22,CarePlan5.json,
+Activate Careplan,1970-02-08 22:22,,
+Run,1970-02-08 22:22,CollectData
+Comment,,Add an unsafe dose
+Add Dose,1970-02-08 22:23,30
+Check Last Dose Validity,,,unsafe
+Comment,,Add an adherent dose
+Add Dose,1970-02-09 22:23,20
+Check Last Dose Validity,,,safe
+Comment,,Modify the dose to be unsafe
+Modify Dose,1970-02-09 22:24,30
+Check Last Dose Validity,,,unsafe_lockout
