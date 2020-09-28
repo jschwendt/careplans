@@ -1,0 +1,16 @@
+Comment,,This case will execute the scenario where we enter a non-adherent safe dose
+Create Careplan,1970-02-08 22:22,CarePlanMDC7062.json,
+Activate Careplan,1970-02-08 22:22,,
+Run,1970-02-08 22:22,CollectData
+Comment,,Add a non-adherent safe dose
+Add Dose,1970-02-08 22:23,80
+Check Last Dose Validity,,,safe
+Comment,,Add a non-adherent dose that should be safe per TF-330
+Check Dose Validity,1970-02-09 22:24,50,safe
+Add Dose,1970-02-09 22:24,50
+Check Last Dose Validity,,,safe
+Comment,,Add an adherent dose
+Add Dose,1970-02-10 22:25,100
+Check Last Dose Validity,,,safe
+Add Dose,1970-02-11 22:25,100
+Check Last Dose Validity,,,safe
