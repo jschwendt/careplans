@@ -8,7 +8,11 @@
             "class":"carePlan",
             "id":"29a6cf84-30e7-456f-9f1e-92ac2116d396",
             "status":"pending",
+            "isCompliant":false,
+            "hasNotified":true,
+            "compliant":false,
             "effective":"2020-09-30T12:03:32+02:00",
+            "expires":"2030-09-30T12:03:32+02:00",
             "sourceId":"custom",
             "variant":"upmc-us",
             "module":"persistence",
@@ -53,7 +57,8 @@
             "createdBy":"fa561943-f2d1-4544-85ce-da78184beace",
             "created":"2020-09-30T10:03:33Z",
             "modifiedBy":"fa561943-f2d1-4544-85ce-da78184beace",
-            "modified":"2020-09-30T10:04:00Z"
+            "modified":"2020-09-30T10:04:00Z",
+            "hcpPhone":"+19083818622"
         }
     ],
     "included":[
