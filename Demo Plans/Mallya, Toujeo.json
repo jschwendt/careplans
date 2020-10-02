@@ -57,7 +57,7 @@
                 "name": "Mallya®",
                 "deviceType": "injection_attachment",
                 "manufacturer": "Biocorp",
-                "udi": "00385541000000",
+                "udi": "00385999001000",
                 "status": "active",
                 "variant": "usestudy-in",
                 "medications": [
@@ -72,7 +72,7 @@
             "name": "Mallya®",
             "deviceType": "injection_attachment",
             "manufacturer": "Biocorp",
-            "udi": "00385541000000",
+            "udi": "00385999001000",
             "status": "active",
             "variant": "usestudy-in",
             "medications": [
